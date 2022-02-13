@@ -15,7 +15,7 @@
  */
 
 function coinFlip() {
-    x = (Math.floor(Math.random() * 2) == 0);
+    x = (Math.round(Math.random()) == 0);
     if(x){
     	return "heads"
     }else{
@@ -48,7 +48,7 @@ function coinFlips(flips) {
   flips = [];
 
   for (let i = 0; i< 10; i++){
-    flips[i] = coinFlip();
+    flips.push(coinFlip())
   }
 
   return flips
@@ -106,10 +106,10 @@ function flipACoin(call) {
   }
 
   if (call == coinFlip){
-    resulting = "win"
+    result.resulting = "win"
   }
   else{
-    resulting = "lose"
+    result.resulting = "lose"
   }
 
   return result
