@@ -8,7 +8,7 @@ const number = args.number || 1;
 
 let flips = [];
 for (let i  = 0; i < number; i++){
-    flips[i] = Coin.coinFlip();
+    flips[i] = Coin.coinFlip(); 
 }
 
 console.log(flips);
