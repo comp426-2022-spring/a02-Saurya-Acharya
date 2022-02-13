@@ -1,4 +1,4 @@
-import * as Coin from "./modules/coin.mjs";
+import {flipACoin} from "./modules/coin.mjs";
 import { createRequire } from "module";
 
 const require = createRequire(import.meta.url);
@@ -9,5 +9,5 @@ const callArg = args.call || "";
 if (callArg === "") {
     console.log("Error: no input.");
 } else {
-    console.log(Coin.flipACoin(callArg));
+    console.log(flipACoin(callArg));
 }

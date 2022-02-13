@@ -1,4 +1,5 @@
-import * as Coin from "./modules/coin.mjs";
+import {coinFlip} from "./modules/coin.mjs";
+import {countFlip} from "./modules/coin.mjs";
 import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
@@ -8,8 +9,8 @@ const number = args.number || 1;
 
 let flips = [];
 for (let i  = 0; i < number; i++){
-    flips[i] = Coin.coinFlip(); 
+    flips[i] = coinFlips(1); 
 }
 
 console.log(flips);
-console.log(Coin.countFlips(flips));
+console.log(countFlips(flips));

@@ -102,15 +102,17 @@ function flipACoin(call) {
   let result = {
     call: call,
     flip: coinFlip,
-    result: ""
+    resulting: ""
   }
 
   if (call == coinFlip){
-    result = "win"
+    resulting = "win"
   }
   else{
-    result = "lose"
+    resulting = "lose"
   }
+
+  return result
 }
 
 
