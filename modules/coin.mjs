@@ -14,12 +14,12 @@
  * 
  */
 
-function coinFlip() {
-    x = (Math.round(Math.random()) == 0);
+export function coinFlip() {
+    var x = (Math.round(Math.random()) == 0);
     if(x){
-    	return "heads"
+    	return "heads";
     }else{
-      return "tails"
+      return "tails";
     }
 
 }
@@ -43,15 +43,15 @@ function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
+export function coinFlips(flips) {
 
-  flips = [];
+  let flips = [];
 
   for (let i = 0; i< 10; i++){
     flips.push(coinFlip())
   }
 
-  return flips
+  return flips;
 
 }
 
@@ -68,20 +68,20 @@ function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
-function countFlips(array) {
+export function countFlips(array) {
   const count = {
     tails: 0,
     heads: 0
   };
   for (let i = 0; i< length(array); i++){
     if (array[i] == "heads"){
-      count.heads+=1
+      count.heads+=1;
     }
     else{
-      count.heads+=1
+      count.heads+=1;
     }
 
-    return count
+    return count;
 
   }
 }
@@ -97,7 +97,7 @@ function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
+export function flipACoin(call) {
   let coinFlip = coinFlip()
   let result = {
     call: call,
@@ -105,11 +105,11 @@ function flipACoin(call) {
     resulting: ""
   }
 
-  if (call == coinFlip){
-    result.resulting = "win"
+  if (result.call == coinFlip){
+    result.resulting = "win";
   }
   else{
-    result.resulting = "lose"
+    result.resulting = "lose";
   }
 
   return result

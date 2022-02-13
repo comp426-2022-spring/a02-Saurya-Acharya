@@ -7,7 +7,7 @@ const args = require('minimist')(process.argv.slice(2));
 args["number"]
 const number = args.number || 1;
 
-let flips = [];
+var flips = [];
 for (let i  = 0; i < number; i++){
     flips.push(coinFlips(1)); 
 }
