@@ -45,13 +45,13 @@ export function coinFlip() {
 
 export function coinFlips(flips) {
 
-  let flips = [];
+  let flipsList = [];
 
-  for (let i = 0; i< 10; i++){
-    flips.push(coinFlip())
+  for (let i = 0; i< flips; i++){
+    flipsList.push(coinFlip())
   }
 
-  return flips;
+  return flipsList;
 
 }
 
