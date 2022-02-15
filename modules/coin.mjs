@@ -81,9 +81,8 @@ export function countFlips(array) {
       count.heads+=1;
     }
 
-    return count;
-
   }
+  return count;
 }
 
 /** Flip a coin!
@@ -99,20 +98,20 @@ export function countFlips(array) {
 
 export function flipACoin(call) {
   let aCoinFlip = coinFlip()
-  let result = {
+  let resulting = {
     call: call,
     flip: aCoinFlip,
-    resulting: ""
+    result: ""
   }
 
-  if (result.call == aCoinFlip){
-    result.resulting = "win";
+  if (resulting.call == aCoinFlip){
+    resulting.result = "win";
   }
   else{
-    result.resulting = "lose";
+    resulting.result = "lose";
   }
 
-  return result
+  return resulting
 }
 
 
